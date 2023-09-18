@@ -1,0 +1,251 @@
+from flask import Flask,jsonify,request,render_template,redirect
+from flask_cors import CORS
+import pandas as pd
+import numpy as np
+import json
+import machine_info
+
+app = Flask(__name__)
+
+CORS(app)
+@app.route('/api/get_RawMaterialTransport', methods=['GET','POST'])
+def data1():
+    if request.method == 'GET':
+        x1 = machine_info.raw_high1
+        x2 = machine_info.raw_med1
+        x3 = machine_info.raw_low1
+        
+        # Create a dictionary with tag names
+        response_data = {
+            "High": x1,
+            "Med": x2,
+            "Low": x3
+        }
+        
+        # jsonify the dictionary
+        return jsonify(response_data)
+
+CORS(app)
+@app.route('/api/get_MixingandNodulizingPlant', methods=['GET','POST'])
+def data4():
+    if request.method == 'GET':
+      x4=machine_info.mix_high1
+      x5=machine_info.mix_med1
+      x6=machine_info.mix_low1
+      response_data = {
+            "High": x4,
+            "Med": x5,
+            "Low": x6
+        }
+      return jsonify(response_data) 
+    
+CORS(app)
+@app.route('/api/get_SinterCooler', methods=['GET','POST'])
+def data7():
+    if request.method == 'GET':
+      x7=machine_info.sin_high1
+      x8=machine_info.sin_med1
+      x9=machine_info.sin_low1
+      response_data = {
+            "High": x7,
+            "Med": x8,
+            "Low": x9
+        }
+      return jsonify(response_data)    
+CORS(app)
+@app.route('/api/get_HearthLayerandReturnFinesHandling', methods=['GET','POST'])
+def data10():
+    if request.method == 'GET':
+      x10=machine_info.Hear_high1
+      x11=machine_info.Hear_med1
+      x12=machine_info.Hear_low1
+      response_data = {
+            "High": x10,
+            "Med": x11,
+            "Low": x12
+        }
+      return jsonify(response_data)  
+CORS(app)
+@app.route('/api/get_IgnitionFurnace', methods=['GET','POST'])
+def data13():
+    if request.method == 'GET':
+      x13=machine_info.Ign_high1
+      x14=machine_info.Ign_med1
+      x15=machine_info.Ign_low1
+      response_data = {
+            "High": x13,
+            "Med": x14,
+            "Low": x15
+        }
+      return jsonify(response_data) 
+
+CORS(app)
+@app.route('/api/get_DosingPlant', methods=['GET','POST'])
+def data16():
+    if request.method == 'GET':
+      x16=machine_info.Dos_high1
+      x17=machine_info.Dos_med1
+      x18=machine_info.Dos_low1
+      response_data = {
+            "High": x16,
+            "Med": x17,
+            "Low": x18
+        }
+      return jsonify(response_data) 
+      
+CORS(app)
+@app.route('/api/get_SinterScreening', methods=['GET','POST'])
+def data19():
+    if request.method == 'GET':
+      x19=machine_info.Sint_high1
+      x20=machine_info.Sint_med1
+      x21=machine_info.Sint_low1
+      response_data = {
+            "High": x19,
+            "Med": x20,
+            "Low": x21
+        }
+      return jsonify(response_data)   
+CORS(app)
+@app.route('/api/get_SinterProductHandling', methods=['GET','POST'])
+def data22():
+    if request.method == 'GET':
+      x22=machine_info.Sinp_high1
+      x23=machine_info.Sinp_med1
+      x24=machine_info.Sinp_low1
+      response_data = {
+            "High": x22,
+            "Med": x23,
+            "Low": x24
+        }
+      return jsonify(response_data) 
+
+CORS(app)
+@app.route('/api/get_WaterSystem', methods=['GET','POST'])
+def data25():
+    if request.method == 'GET':
+      x25=machine_info.Water_high1
+      x26=machine_info.Water_med1
+      x27=machine_info.Water_low1
+      response_data = {
+            "High": x25,
+            "Med": x26,
+            "Low": x27
+        }
+      return jsonify(response_data)
+
+CORS(app)
+@app.route('/api/get_ProcessFansandDucts', methods=['GET','POST'])
+def data28():
+    if request.method == 'GET':
+      x28=machine_info.Process_high1
+      x29=machine_info.Process_med1
+      x30=machine_info.Process_low1
+      response_data = {
+            "High": x28,
+            "Med": x29,
+            "Low": x30
+        }
+      return jsonify(response_data)
+CORS(app)
+@app.route('/api/get_PlantDedusting', methods=['GET','POST'])
+def data31():
+    if request.method == 'GET':
+      x31=machine_info.Plant_high1
+      x32=machine_info.Plant_med1
+      x33=machine_info.Plant_low1
+      response_data = {
+            "High": x31,
+            "Med": x32,
+            "Low": x33
+        }
+      return jsonify(response_data)
+
+CORS(app)
+@app.route('/api/get_SinterMachine', methods=['GET','POST'])
+def data34():
+    if request.method == 'GET':
+      x34=machine_info.Sinter_high1
+      x35=machine_info.Sinter_med1
+      x36=machine_info.Sinter_low1
+      response_data = {
+            "High": x34,
+            "Med": x35,
+            "Low": x36
+        }
+      return jsonify(response_data) 
+
+CORS(app)
+@app.route('/api/get_ChilledWaterSystem', methods=['GET','POST'])
+def data37():
+    if request.method == 'GET':
+      x37=machine_info.Chilled_high1
+      x38=machine_info.Chilled_med1
+      x39=machine_info.Chilled_low1
+      response_data = {
+            "High": x37,
+            "Med": x38,
+            "Low": x39
+        }
+      return jsonify(response_data) 
+
+CORS(app)
+@app.route('/api/get_ProcessGasDedusting', methods=['GET','POST'])
+def data40():
+    if request.method == 'GET':
+      x40=machine_info.ProcessG_high1
+      x41=machine_info.ProcessG_med1
+      x42=machine_info.ProcessG_low1
+      response_data = {
+            "High": x40,
+            "Med": x41,
+            "Low": x42
+        }
+      return jsonify(response_data)
+CORS(app)    
+@app.route('/api/get_Division', methods=['GET','POST'])
+def data41():
+    if request.method == 'GET':
+        x1 = machine_info.rawmaterialtransport
+        x2 = machine_info.mixingandnodulizingplant
+        x3 = machine_info.sintercooler
+        x4 = machine_info.hearthlayerandreturnfineshandling
+        x5 = machine_info.ignitionfurnace
+        x6 = machine_info.dosingplant
+        x7 = machine_info.sinterscreening
+        x8 = machine_info.sinterproducthandling
+        x9 = machine_info.watersystem
+        x10 = machine_info.processfansandducts
+        x11 = machine_info.plantdedusting
+        x12 = machine_info.sintermachine
+        x13 = machine_info.chilledwatersystem
+        x14 = machine_info.processgasdedusting
+        
+        # Create a dictionary with tag names
+        response_data = {
+            "Raw_Material_Transport": x1,
+            "Mixing_and_Nodulizng_Plant": x2,
+            "Sinter_Cooler": x3,
+            "Hearth_Layer_and_Return_Fines_Handling": x4,
+            "Ignition_Furnace": x5,
+            "Dosing_Plant": x6,
+            "Sinter_Screening": x7,
+            "Sinter_Product_Handling": x8,
+            "Water_System": x9,
+            "Process_Fans_and_Ducts": x10,
+            "Plant_Dedusting": x11,
+            "Sinter_Machine": x12,
+            "Chilled_Water_System": x13,
+            "Process_Gas_Dedusting": x14
+        }
+        
+        # jsonify the dictionary
+        return jsonify(response_data)
+    
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+

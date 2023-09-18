@@ -1,0 +1,113 @@
+
+
+
+.card-low {
+  border: 0.4px solid #f5f6f7;
+  /* border-radius: 5%; */
+  /* width: fit-content; */
+  padding: 10px;
+  /* background-color: rgb(168, 207, 207); */
+}
+
+.card-medium {
+  border: 0.4px solid #f5f6f7;
+  /* border-radius: 5%; */
+  /* width: fit-content; */
+  padding: 10px;
+  /* background-color: rgb(168, 207, 207); */
+}
+
+.card-high {
+  border: 0.4px solid #f5f6f7;
+  /* border-radius: 5%; */
+  /* width: fit-content; */
+  padding: 10px;
+  /* background-color: rgb(168, 207, 207); */
+}
+
+.grid-container-division{
+  display: grid;
+  width: 1000px;
+  /* border-radius: 5%; */
+  /* width: fit-content; */
+  padding: 10px;
+  grid-template-columns:  auto auto auto auto auto auto auto;
+  background-color: #ffffff;
+}
+.grid-item-division {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: .3px solid rgba(80, 79, 79, 0.8); */
+  padding: 10px;
+  /* border: 0.4px solid #f5f6f7; */
+
+  font-size: 10px;
+/*   
+  width: 180px;
+  height: 120px; */
+
+  width: 150px;
+  height: 90px;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 0.4px solid #e8e9e9;
+  border-radius: 5px;
+  margin: 10px; 
+  /* text-align: center; */
+}
+
+.heading {
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row; /* Align cards horizontally */
+  flex-wrap: wrap; /* Wrap to the next line if necessary */
+}
+
+/* .card {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 0.4px solid #e8e9e9;
+  border-radius: 5px;
+  margin: 10px; 
+
+  width: 150px;
+  height: 90px; 
+} */
+
+.card .value {
+  margin-top: 10px;
+  
+  font-size: 12px;
+  font-weight: 600;
+  color: #576081;
+}
+
+.card .key {
+  margin: 0;
+  height: 60px;
+  font-size: 16px;
+}
+.button1{
+  width: fit-content;
+}
+.fa, .fas {
+  font-weight: 900;
+  color: #5d6685;
+}
+
+
+.title{
+  color: #454c63;
+  font-size: 14px;
+  font-weight: 500;
+}

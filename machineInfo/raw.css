@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+ .title{
+  color: #454c63;
+  font-size: 14px;
+  font-weight: 500;
+ } 
+  .card-container {
+    display: flex;
+    flex-direction: row; /* Align cards horizontally */
+    flex-wrap: wrap; /* Wrap to the next line if necessary */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 0.4px solid #e8e9e9;
+    border-radius: 50px;
+    margin: 10px; /* Adjust margin between cards */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    width: 150px;
+    height: 90px; /* Adjust the card width as needed */
+  }
+  
+  .card .value {
+    margin-top: 10px;
+    
+    font-size: 12px;
+    font-weight: 600;
+    color: #576081;
+  }
+  
+  .card .key {
+    margin: 0;
+    height: 60px;
+    font-size: 16px;
+  }
+  
+  .machine-grid {
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: white;
+    padding: 10px;
+    border: 0.4px solid #eaebec;
+    width: 340px;
+    height:121px;
+  }
+  .machine-grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* margin: 2px; */
+
+/*   
+    padding: 20px;
+  
+    text-align: center; */
+    height: 30px;
+  }
+
+  
+.grid-container {
+  display: grid;
+  /* width: 500px; */
+  grid-template-columns: auto auto auto;
+  background-color: #ffffff;
+  /* padding: 10px; */
+  margin-left: 100px;
+  width: 1100px;
+}
+
+  .strong {
+    
+    background-color: #f3f3f3;
+    padding: 4px 18px 4px 18px;
+    border-radius: 50px 50px 50px 50px;
+    /* margin-left: 100px; */
+    font-size: 12px;
+    color: #5d6685;
+    font-weight: 600;
+  }
+  .js-plotly-plot  {
+    direction: ltr;
+    font-family: "Open Sans", verdana, arial, sans-serif;
+    margin: 12px;
+    padding: 0px;
+}
+.machine {
+  font-size: 11px;
+  color: #5d6685;
+  font-weight: 600;
+}
+.type {
+  font-size: 12px;
+  font-weight: 600;
+  color: #404040;
+  width: 200px;
+}
+.count {
+  font-size: 11px;
+  color: #5d6685;
+  font-weight: 600;
+}
+.division {
+  font-size: 12px;
+  color: #5d6685;
+  font-weight: 600;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* padding: 20px; */
+  color: #414141;
+  font-size: 10px;
+}
+.grid-item-High {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+  /* text-align: center; */
+}
